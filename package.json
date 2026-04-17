@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "vite --port 3000"
+    "dev": "vite --port 3000",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^6.0.1",
