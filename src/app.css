@@ -1,0 +1,148 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+body {
+  background-color: #1c2127;
+  /* Blueprint dark theme requires this class */
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 48px 16px;
+}
+
+.app-title {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-align: center;
+  margin: 0 0 8px;
+  background: linear-gradient(135deg, #8be9fd 0%, #bd93f9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.app-subtitle {
+  text-align: center;
+  color: #8f99a8;
+  margin: 0 0 48px;
+  font-size: 1rem;
+}
+
+.players-row {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 680px;
+  margin-bottom: 32px;
+}
+
+.player-card {
+  flex: 1;
+  min-width: 280px;
+  max-width: 320px;
+}
+.player-card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.player-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: #fff;
+  flex-shrink: 0;
+}
+.player-card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #f5f8fa;
+  margin: 0;
+}
+
+.color-swatches {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.color-swatch {
+  width: 34px;
+  height: 34px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: transform 0.1s, border-color 0.1s, opacity 0.15s;
+  box-sizing: border-box;
+}
+.color-swatch:hover:not(.swatch-taken) {
+  transform: scale(1.15);
+}
+.color-swatch.swatch-selected {
+  border-color: #ffffff;
+  transform: scale(1.1);
+}
+.color-swatch.swatch-taken {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
+.player-preview {
+  margin-top: 20px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  transition: background-color 0.2s;
+}
+
+.start-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.color-conflict-msg {
+  color: #ff6b6b;
+  font-size: 0.85rem;
+}
+
+.game-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 48px;
+  color: #f5f8fa;
+}
+.game-placeholder h2 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+.vs-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 1.2rem;
+}
+.player-chip {
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
