@@ -1,0 +1,11 @@
+{
+  "name": "dots-and-boxes",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite --port 3000"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}
